@@ -5,7 +5,7 @@ from selene.support.shared. jquery_style import s
 
 
 def test_github():
-    browser.open("https://github.com/")
+    browser.open("/")
 
     s(by.text('Search or jump to...')).click()
     s('#query-builder-test').send_keys("CptVasilver/python_homework8")
