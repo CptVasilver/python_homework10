@@ -1,10 +1,7 @@
-from selene.support import by
-from selene.support.conditions import be
-from selene.support.shared import browser
-from selene.support.shared. jquery_style import s
+from selene.support.shared.jquery_style import s
+from selene import browser, be, by
 
-
-def test_github():
+def test_with_selene():
     browser.open("/")
 
     s(by.text('Search or jump to...')).click()
